@@ -163,3 +163,4 @@ cython_debug/
 #Module 1/Week 1/.idea/misc.xml
 #Module 1/Week 1/.idea/inspectionProfiles/Project_Default.xml
 #Module 1/Week 1/.idea/inspectionProfiles/profiles_settings.xml
+.sonarlint/connectedMode.json
