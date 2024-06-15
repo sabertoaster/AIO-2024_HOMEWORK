@@ -26,7 +26,7 @@ class MyStack:
 
     def pop(self):
         if self.is_empty():
-            raise Exception("Stack is empty")
+            raise ValueError("Stack is empty")
         node = self.head
         self.head = self.head.next
         self.curr_len -= 1
@@ -34,7 +34,7 @@ class MyStack:
 
     def top(self):
         if self.is_empty():
-            raise Exception("Stack is empty")
+            raise ValueError("Stack is empty")
         return self.head.val
 
 

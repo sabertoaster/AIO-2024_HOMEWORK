@@ -33,7 +33,7 @@ class MyQueue:
 
     def dequeue(self):
         if self.is_empty():
-            raise Exception("Queue is empty")
+            raise ValueError("Queue is empty")
         node = self.head
         self.head = self.head.next
         self.curr_len -= 1
@@ -45,7 +45,7 @@ class MyQueue:
 
     def front(self):
         if self.is_empty():
-            raise Exception("Queue is empty")
+            raise ValueError("Queue is empty")
         return self.head.val
 
 

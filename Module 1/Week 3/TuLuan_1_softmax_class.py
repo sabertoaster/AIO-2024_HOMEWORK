@@ -7,9 +7,9 @@ import numpy as np
 class Softmax(Module):
     def __init__(self, data=None):
         super(Softmax, self).__init__()
-        try:
+        if data is not None:
             self.data = self.forward(data)
-        except:
+        else:
             self.data = None
 
     def __str__(self):
@@ -28,9 +28,9 @@ class Softmax(Module):
 class softmax_stable(Module):
     def __init__(self, data=None):
         super(softmax_stable, self).__init__()
-        try:
+        if data is not None:
             self.data = self.forward(data)
-        except:
+        else:
             self.data = None
 
     def __str__(self):
