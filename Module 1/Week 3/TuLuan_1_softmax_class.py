@@ -53,7 +53,6 @@ if __name__ == "__main__":
     softmax = Softmax()
     output = softmax(data)
     print(output)
-    # tensor([0.0900, 0.2447, 0.6652])
 
     # Examples 2
     data = Tensor([1000, 1001, 1002])
