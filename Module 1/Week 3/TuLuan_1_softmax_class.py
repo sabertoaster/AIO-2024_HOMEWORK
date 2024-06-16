@@ -49,7 +49,7 @@ class softmax_stable(Module):
 
 if __name__ == "__main__":
     # Examples 1
-    data = Tensor([1, 2, 3])
+    data = Tensor([1, 2, 300000000])
     softmax = Softmax()
     output = softmax(data)
     print(output)
