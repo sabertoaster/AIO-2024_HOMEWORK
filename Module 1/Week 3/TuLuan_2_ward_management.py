@@ -59,7 +59,7 @@ class Teacher:
         self.subject = subject
 
     def describe(self):
-        print(f"Doctor - Name : {self.name} - YoB : {self.yob} - Grade : {self.subject}")
+        print(f"Teacher - Name : {self.name} - YoB : {self.yob} - Grade : {self.subject}")
 
 
 if __name__ == "__main__":
