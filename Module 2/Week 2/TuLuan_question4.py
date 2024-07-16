@@ -27,7 +27,7 @@ def compute_binary_mask(diff_img):
 def replace_background(bg1_image, bg2_image, ob_image):
     difference_single_channel = compute_difference(bg1_image, ob_image)
     binary_mask = np.repeat(compute_binary_mask(difference_single_channel)[..., np.newaxis], 3, axis=2)
-    output = np.where(binary_mask == 255., ob_image, bg2_image)
+    output = np.where(binary_mask == 255, ob_image, bg2_image)
     return output
 
 
